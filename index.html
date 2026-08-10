@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Azizah | Web Developer Journey</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #e2e8f0;
+            background-color: #0f172a;
+        }
+        header {
+            background-color: #1e293b;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 1px solid #334155;
+        }
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        section {
+            background: #1e293b;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+            border: 1px solid #334155;
+        }
+        h2 {
+            color: #2dd4bf;
+            border-bottom: 2px solid #2dd4bf;
+            padding-bottom: 5px;
+            width: fit-content;
+        }
+        .skills-list {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            padding: 0;
+            list-style: none;
+        }
+        .skills-list li {
+            background: #334155;
+            color: #2dd4bf;
+            padding: 6px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 500;
+            border: 1px solid #475569;
+        }
+        .project-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+        .project-card {
+            border: 1px dashed #475569;
+            padding: 15px;
+            border-radius: 6px;
+            background: #0f172a;
+        }
+        .badge {
+            background-color: #2dd4bf;
+            color: #0f172a;
+            font-size: 11px;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #2dd4bf;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 14px rgba(45, 212, 191, 0.3);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- BAGIAN PEMBUKA / HERO -->
+    <header>
+        <!-- Tambahkan baris kode gambar di bawah ini -->
+        <img src="assets/profil.jpg" alt="Foto Profil Azizah" class="profile-img">
+
+        <h1>Halo, Saya Azizah</h1>
+        <p>Mahasiswa Informatika & Pengembang Web Masa Depan</p>
+    </header>
+
+    <div class="container">
+
+        <!-- TENTANG SAYA -->
+        <section id="about">
+            <h2>Tentang Saya</h2>
+            <p>Saat ini saya sedang menempuh perkuliahan di jurusan Informatika dan memiliki ketertarikan besar di bidang Web Development. Saya senang mengeksplorasi bagaimana kode-kode di balik layar bisa menciptakan tampilan website yang fungsional dan interaktif. Bagi saya, setiap baris kode adalah proses belajar yang menantang sekaligus seru.</p>
+        </section>
+
+        <!-- KEAHLIAN / SKILLS -->
+        <section id="skills">
+            <h2>Keahlian Dasar</h2>
+            <p>Beberapa teknologi dan peralatan yang pernah saya gunakan dalam proses belajar pemrograman web:</p>
+            <ul class="skills-list">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript (Dasar)</li>
+                <li>VS Code</li>
+                <li>Github</li>
+            </ul>
+        </section>
+
+        <!-- PROYEK / PORTOFOLIO -->
+        <section id="projects">
+            <h2>Proyek Saya</h2>
+            <div class="project-grid">
+
+                <!-- Proyek 1: Web ini sendiri -->
+                <div class="project-card">
+                    <h3>Personal Portofolio Web <span class="badge">Live</span></h3>
+                    <p>Website portofollio pribadi pertama saya yang dibuat menggunakan HTML dan CSS untuk mendokumentasikan perjalanan belajar koding saya.</p>
+                </div>
+
+                <!-- Proyek 2: To-Do List (Rencana ke depan) -->
+                <div class="project-card" style="opacity: 0.7;">
+                    <h3>To-Do List App <span class="badge" style="background: #64748b;">Coming Soon</span></h3>
+                    <p>Proyek aplikasi pengelola tugas harian interaktif yang rencananya akan saya bangun menggunakan JavaScript DOM manipulation.</p>
+                </div>
+
+            </div>
+        </section>
+
+    </div>
+    
+</body>
+</html>
